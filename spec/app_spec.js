@@ -7,13 +7,11 @@ describe("backbone user", function() {
 
   it("should have a name", function() {
     user.set({ name: 'name' });
-    console.log(user);
     expect(user.get('name')).toEqual('name');
   });
   
   it("should have an email", function() {
-    user.set({ email: 'name@website.com' })
-    console.log(user);
+    user.set({ email: 'name@website.com' });
     expect(user.get('email')).toEqual('name@website.com');
   });   
 });
